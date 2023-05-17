@@ -1,0 +1,87 @@
+body{
+    background-color: #ffffff;
+    margin:0;
+    border: 0;
+    padding: 0;
+    font-family:'raleway';
+}
+
+  
+.block,
+.chain {
+    font-size: 200px;
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+  
+.block {
+    left: 90px;
+}
+  
+.chain {
+    right: 175px;
+    top: 150px;
+}
+  
+.vide{
+    padding-top: 10000px;
+}
+
+#blockchain-container {
+    position: sticky;
+    top: 10%; 
+    left: 50%;
+    transform: translate(-50%, -70%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+  animation-name: fadeIn; 
+  animation-duration: 2s; 
+  animation-delay: 0.5s; 
+  animation-fill-mode: forwards; 
+}
+
+.banner {
+    color: #ffffff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 80%, rgba(255,255,255,1) 100%);
+    
+}
+
+.scroll-container {
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-height: 100%; 
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.content {
+    
+    text-align: center;
+}
+.content h1{
+    display: inline-block;
+    font-size: 200px;
+    
+}
+

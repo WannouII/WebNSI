@@ -78,10 +78,91 @@ body{
 .content {
     
     text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10%;
 }
 .content h1{
-    display: inline-block;
-    font-size: 200px;
+
+    font-size: 175px;
     
 }
 
+.content h2{
+    
+    font-size: 75px;
+    
+}
+
+.content p {
+    text-indent: 100px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 50%;
+    font-size: 40px;
+}
+
+.navigation{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5cm;
+}
+
+.navigation p {
+    margin: 0 auto;
+    max-width: 50%;
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+
+.button {
+    background-color: #000000; /* Couleur de fond noire */
+    color: #ffffff; /* Couleur du texte en blanc */
+    border: none; /* Pas de bordure */
+    padding: 40px 80px; /* Espacement intérieur du bouton */
+    text-align: center; /* Centrer le texte horizontalement */
+    text-decoration: none; /* Supprimer la décoration de lien par défaut */
+    display: inline-block; /* Afficher le bouton en tant que bloc inline */
+    cursor: pointer; /* Afficher un curseur pointer au survol */
+    font-size: 30px; /* Taille de police du texte */
+    font-weight: bold; /* Gras pour le texte */
+    border-radius: 15px; /* Arrondir les coins du bouton */
+  }
+  
+  .button:hover {
+    background-color: #333333; /* Couleur de fond noire foncée au survol */
+  }
+
+  .footer{
+    color: #ffffff;
+    grid-area: l-f;
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+    padding: 15px 0 15px;
+    background-color: rgb(27, 27, 27);
+    bottom: 0;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 0;
+    
+  }
+  
+  #logo{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  
+  #logo .logou{
+    display: inline;
+    cursor: pointer;
+    list-style: none;
+    padding-right: 20px;
+  }
+  
+  .logo{
+    width: 50px;
+    height: 50px;
+  }

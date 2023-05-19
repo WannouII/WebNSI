@@ -1,6 +1,7 @@
 window.addEventListener("scroll", function() {
   var block = document.querySelector(".block");
   var chain = document.querySelector(".chain");
+  var logo = document.querySelector(".hlogo");
   var banner = document.querySelector(".banner")
 
   var scrollPosition = window.scrollY;
@@ -10,4 +11,7 @@ window.addEventListener("scroll", function() {
   block.style.opacity =  1-scrollPosition/500
   chain.style.transform = "translateX(" + scrollPosition + "px)";
   chain.style.opacity =  1-scrollPosition/500
+
 });
+
+

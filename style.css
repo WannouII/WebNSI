@@ -4,6 +4,10 @@ body{
     border: 0;
     padding: 0;
     font-family:'raleway';
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-height: 100%; 
 }
 
   
@@ -30,9 +34,9 @@ body{
 
 #blockchain-container {
     position: sticky;
-    top: 10%; 
+    top: 20%; 
     left: 50%;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,22 +47,36 @@ body{
   animation-fill-mode: forwards; 
 }
 
+.header{
+    color: #ffffff;
+    background-color: #000000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 3%;
+    padding-left: 3%;
+    align-items: center;
+    
+}
+
 .banner {
     color: #ffffff;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 150vh;
+    height: 125vh;
     display: flex;
     align-items: center;
     overflow: hidden;
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 80%, rgba(255,255,255,1) 100%);
+
     
 }
 .banner p {
     position: sticky;
-    top: 10%; 
-    left: 50%;
+    top: 20%; 
+    left: 45%;
     transform: translate(-50%, -70%);
     display: flex;
     justify-content: center;
@@ -68,16 +86,9 @@ body{
     animation-delay: 0.5s; 
     animation-fill-mode: forwards; 
 }
-.scroll-container {
-    overflow-y: scroll;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    max-height: 100%; 
-  }
-  
-  .scroll-container::-webkit-scrollbar {
+body::-webkit-scrollbar {
     display: none;
-  }
+}
   
   @keyframes fadeIn {
     from {
@@ -102,6 +113,12 @@ body{
 .content h2{
     
     font-size: 75px;
+    
+}
+
+.content h3{
+    
+    font-size: 50px;
     
 }
 
@@ -142,8 +159,39 @@ body{
   
   .button:hover {
     background-color: #333333; /* Couleur de fond noire foncée au survol */
+    animation-name: buttonhover-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
   }
-
+  
+  @keyframes buttonhover-in {
+    from {
+        background-color: #000000;
+        padding: 40px 80px;
+    }
+    to {
+        background-color: #333333;
+        padding: 40px 100px;
+    }
+  }
+  
+  .button:not(:hover) {
+    animation-name: buttonhover-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes buttonhover-out {
+    from {
+        background-color: #333333;
+        padding: 40px 100px;
+    }
+    to {
+        background-color: #000000;
+        padding: 40px 80px;
+    }
+  }
+  
   .footer{
     color: #ffffff;
     grid-area: l-f;
@@ -158,23 +206,69 @@ body{
     margin-bottom: 0;
     
   }
-  
-  #logo{
+.hlogo {
+    position: relative;
+   top: -900px;
+   right: -50px;
+   width: 100px;
+   height: 100px;
+   animation-name: fadeIn;
+    animation-duration: 2s; 
+   animation-delay: 0.5s; 
+    animation-fill-mode: forwards; 
+}
+#logo{
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-  }
+}
   
-  #logo .logou{
+#logo .logou{
     display: inline;
     cursor: pointer;
     list-style: none;
     padding-right: 20px;
-  }
+}
   
-  .logo{
+.logo{
     width: 50px;
     height: 50px;
-  }
+}
+
+#navbar {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0; /* Ajout de la propriété left: 0 pour que la barre de navigation soit alignée à gauche */
+    right: 0; /* Ajout de la propriété right: 0 pour que la barre de navigation soit alignée à droite */
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar table {
+    margin: 0 auto; /* Ajout de la propriété margin: 0 auto pour centrer la table horizontalement */
+    width: 100%; /* Ajout de la propriété width: 100% pour que la table occupe toute la largeur */
+}
+
+#navbar a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 14px 16px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+}
+
+#navbar a img {
+    width: 30px;
+    height: 30px;
+}
+
+

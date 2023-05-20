@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications - BLOCKCHAIN</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <table id="navbar" align="center">
+            <tr>
+                <td>
+                    <a href="index.html"><img src="images/logoblack.png"  alt="home"></a>
+                </td>
+                <td>
+                    <a href="application.html">Applications</a>
+                </td>
+                <td>
+                    <a href="bitcoin.html"> Le Bitcoin</a>
+                </td>
+                <td>
+                    <a href="dangers.html">Les dangers</a>
+                </td>
+                <td>
+                    <a href="loiEnFrance.html">La loi en France</a>
+                </td>
+                <td>
+                    <a href="gettingStarted.html">Débuter</a>
+                </td>
+                <td>
+                    <a href="quiz.html">Le quiz</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="header">
+        <h1>Le bitcoin</h1>
+        <img src="images/logoblack.png" alt="logo" class="hlogo">
+    </div>
+    <div class="content">
+        <h1>Le Bitcoin</h1>
+        <h2>Son histoire</h2>
+        <p>Le Bitcoin, créé en 2009 par Satoshi Nakamoto, est une cryptomonnaie révolutionnaire basée sur la technologie de la blockchain. Il permet des paiements électroniques <i>peer-to-peer</i> rapides, sécurisés et peu coûteux. Le Bitcoin a gagné en popularité en raison de sa rareté et de sa valeur intrinsèque limitée à 21 millions de bitcoins. Au-delà de son utilisation comme monnaie, le Bitcoin est devenu un actif d'investissement recherché, attirant l'attention des investisseurs institutionnels et des particuliers. Malgré sa volatilité, le Bitcoin s'est maintenu et est devenu la cryptomonnaie la plus connue. Il a ouvert la voie à l'émergence d'autres cryptomonnaies et a inspiré le développement de la technologie de la blockchain pour des applications variées, de la finance décentralisée à la tokenisation des actifs. Accepté par de plus en plus de commerçants et d'institutions, le Bitcoin continue d'évoluer et de susciter un intérêt mondial croissant, avec de nombreux pays étudiant sa réglementation.</p>
+        <div class="article">
+            <div class="column">
+                <h2>Sa décentralisation</h2>
+                <p>Le Bitcoin est une cryptomonnaie décentralisée basée sur la blockchain. Son réseau peer-to-peer fonctionne sans autorité centrale. Chaque transaction est validée par des nœuds du réseau, garantissant ainsi la sécurité et l'intégrité du système. La décentralisation du Bitcoin élimine le besoin d'intermédiaires et offre une transparence totale des transactions. Les utilisateurs peuvent participer activement au réseau en devenant des nœuds. Cela renforce la confiance des utilisateurs et permet un contrôle direct sur les fonds. Cependant, la décentralisation peut entraîner des défis, tels que la lenteur des transactions et la vulnérabilité aux attaques. Malgré cela, la décentralisation du Bitcoin a révolutionné le domaine de la finance en offrant une alternative transparente, sécurisée et autonome aux systèmes traditionnels.</p>
+                
+            </div>
+            <img src="images/decentralisation.png" alt="decentralisation du Bitcoin">
+        </div>
+        
+        <h2>Confidentialité et transparence</h2>
+        <p></p>
+        <h2>mineurs et sécurité du réseau</h2>
+        <p></p>
+        <h2>L'impact sur l'innovation financière</h2>
+        <p></p>
+        <h3>état du prix du Bitcoin en Live:</h3>
+        <div id="tv_chart_container">
+            <script>
+                new TradingView.widget({
+                  "width": 800,
+                  "height": 500,
+                  "symbol": "BITSTAMP:BTCUSD",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "dark",
+                  "style": "1",
+                  "locale": "fr",
+                  "toolbar_bg": "#f1f3f6",
+                  "enable_publishing": false,
+                  "hide_top_toolbar": true,
+                  "hide_legend": false,
+                  "save_image": false,
+                  "container_id": "tv_chart_container"
+                });
+              </script>
+        </div>
+        <h4>Selon <a href="https://fr.tradingview.com/">Trading view</a> </h4>
+    </div>
+    <div class="navigation">
+        <a href="btc.html" class="button">Page suivante</a>
+    </div>
+    <div class="footer">
+        <div>
+            <p>
+            Si vous avez besoin de plus d'information, merci de contacter le développeur.
+            </p>
+        </div>
+        <ul id="logo">
+            <li class="logou">
+                <a href="https://www.youtube.com/channel/UCTOgK5DDCOaGxCZIDVzUjOQ">
+                    <img src="images/ytblogo.png" alt="youtube logo" class="logo">
+                </a>
+            </li>
+            <li class="logou" >
+                <a href="https://twitter.com/ii_wannou">
+                <img src="images/twitterlogo.jpg" alt="twitter logo" class="logo">
+                </a>
+            </li>
+            <li class="logou">
+                <a href="https://github.com/WannouII">
+                    <img src="images/gitlogo.png" alt="github logo" class="logo">
+                </a>
+            </li>
+            <li class="logou">
+                <a href="https://codepen.io/steve_75013">
+                    <img src="images/copdenlogo.png" alt="codepen logo" class="logo">
+                </a>
+            </li>
+            <li class="logou">
+                <a href="mailto:mathysprudhommealbert@gmail.com">
+                    <img src="images/maillogo.png" alt="mail logo" class="logo">
+                </a>
+            </li>
+        </ul>
+        <p id="smp">Les droits d'auteurs de tout ce qui est présent sur le site reviennent à ceux qui les ont créés.</p>
+    </div>
+</body>
+</html>

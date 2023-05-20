@@ -103,17 +103,32 @@ body::-webkit-scrollbar {
     text-align: center;
     margin: 0 auto;
     padding-bottom: 10%;
+    max-width: 90%;
 }
 .content h1{
-
+    
     font-size: 175px;
     
 }
 
+.article {
+    display: flex; /* Utilisation de la flexbox pour afficher les éléments côte à côte */
+    align-items: center; /* Alignement vertical au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+    
+}
+.column {
+    flex-direction: column;
+}
 .content h2{
     
     font-size: 75px;
     
+    
+}
+
+.content .column h2 {
+    order: 1;
 }
 
 .content h3{
@@ -122,13 +137,38 @@ body::-webkit-scrollbar {
     
 }
 
-.content p {
-    text-indent: 100px;
-    text-align: justify;
-    margin: 0 auto;
-    max-width: 50%;
-    font-size: 40px;
+.content h4 a {
+    text-decoration: none;
+    color: #000000;
 }
+
+.content h4 a:hover {
+    text-decoration: underline;
+}
+.content p {
+    text-align: justify;
+    flex: 1; /* Permet au paragraphe de prendre autant d'espace que possible */
+    margin-right: 7%; /* Marge à droite pour espacer le paragraphe de l'image */
+    margin-left: 7%;
+    font-size: 30px;
+}
+.content .column p {
+    text-align: justify;
+    flex: 1; /* Permet au paragraphe de prendre autant d'espace que possible */
+    margin-right: 7%; /* Marge à droite pour espacer le paragraphe de l'image */
+    margin-left: 7%;
+    font-size: 30px;
+    order: 2;
+}
+.content img {
+    width: 40%;
+    height: 40%;
+    border-radius: 15%;
+    margin-right: 7%; /* Marge à droite pour espacer le paragraphe de l'image */
+    margin-left: 7%;
+}
+
+
 
 .navigation{
     text-align: center;

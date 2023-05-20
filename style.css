@@ -8,6 +8,7 @@ body{
     scrollbar-width: none;
     -ms-overflow-style: none;
     max-height: 100%; 
+    transition: background-color 0.5s ease-in-out;
 }
 body.dark-mode{
     background-color: #1f1f1f;
@@ -20,10 +21,10 @@ body.dark-mode{
 .dark-mode .banner {
     color: #1f1f1f;
     background: linear-gradient(0deg, #1f1f1f 0%, rgb(172, 172, 172) 80%, rgba(255,255,255,1) 100%);
-}
+  }
 .block,
 .chain {
-    font-size: 200px;
+    font-size: 900%;
     position: relative;
     transition: transform 0.3s ease;
 
@@ -79,13 +80,10 @@ body.dark-mode{
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 80%, rgba(255,255,255,1) 100%);  
-}
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 80%, rgba(255,255,255,1) 100%);
+    transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+  }
 
-body.banner.dark-mode {
-    color: #1f1f1f;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(172, 172, 172) 80%, rgba(255,255,255,1) 100%);
-}
 .banner p {
     position: sticky;
     top: 20%; 
@@ -256,12 +254,14 @@ body::-webkit-scrollbar {
     animation-name: buttonhover-out;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    transition: background-color 0.3s ease-in-out;
   }
 
   .dark-mode .button:not(:hover) {
     animation-name: buttonhover-outdark;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    transition: background-color 0.3s ease-in-out;
   }
   
   @keyframes buttonhover-out {
@@ -366,3 +366,95 @@ body::-webkit-scrollbar {
 }
 
 
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+  }
+  input[type=checkbox]:focus {
+    outline: 0;
+  }
+  
+  .toggle {
+    height: 32px;
+    width: 52px;
+    border-radius: 16px;
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    border: 2px solid #474755;
+    background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
+    transition: all 0.2s ease;
+  }
+  .toggle:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
+  }
+  .toggle:checked {
+    border-color: #654FEC;
+  }
+  .toggle:checked:after {
+    transform: translatex(20px);
+  }
+
+  .content .image-container {
+    position: relative;
+    display: inline-block;
+    transition: filter 0.3s ease-in-out;
+    width: 100px;
+    height: 100px; 
+  }
+
+  .dark-mode .content .image-container {
+    filter: invert(1);
+    width: 100px;
+    height: 100px; 
+  }
+
+  .text-box {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .content .image-container:hover .text-box {
+    opacity: 1;
+  }
+
+  .content .image-container2 {
+    position: relative;
+    display: inline-block;
+    transition: filter 0.3s ease-in-out;
+    filter: invert(1);
+     
+  }
+
+  .content .image-container2 img{
+    width: 100px;
+    height: 100px; 
+     
+  }
+
+  .dark-mode .content .image-container2 {
+    filter: invert(0);
+    width: 100px;
+    height: 100px; 
+  }
+
+ #rotatecolor{
+    transform: rotate(90deg);
+ }

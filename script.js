@@ -14,4 +14,16 @@ window.addEventListener("scroll", function() {
 
 });
 
+function toggleMode() {
+  var body = document.body;
+  body.classList.toggle("dark-mode"); // Ajoute ou supprime la classe 'dark-mode'
+
+  var modeBtn = document.getElementById("modeBtn");
+  if (body.classList.contains("dark-mode")) {
+    modeBtn.textContent = "Mode Jour";
+  } else {
+    modeBtn.textContent = "Mode Nuit";
+  }
+}
+
 

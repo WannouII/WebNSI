@@ -9,8 +9,18 @@ body{
     -ms-overflow-style: none;
     max-height: 100%; 
 }
+body.dark-mode{
+    background-color: #1f1f1f;
+}
 
-  
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+.dark-mode .banner {
+    color: #1f1f1f;
+    background: linear-gradient(0deg, #1f1f1f 0%, rgb(172, 172, 172) 80%, rgba(255,255,255,1) 100%);
+}
 .block,
 .chain {
     font-size: 200px;
@@ -69,9 +79,12 @@ body{
     display: flex;
     align-items: center;
     overflow: hidden;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 80%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(19,19,19,1) 80%, rgba(255,255,255,1) 100%);  
+}
 
-    
+body.banner.dark-mode {
+    color: #1f1f1f;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(172, 172, 172) 80%, rgba(255,255,255,1) 100%);
 }
 .banner p {
     position: sticky;
@@ -142,6 +155,11 @@ body::-webkit-scrollbar {
     color: #000000;
 }
 
+.dark-mode .content h4 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .content h4 a:hover {
     text-decoration: underline;
 }
@@ -196,10 +214,20 @@ body::-webkit-scrollbar {
     font-weight: bold; /* Gras pour le texte */
     border-radius: 15px; /* Arrondir les coins du bouton */
   }
-  
+.dark-mode .button  {
+    background-color: #ffffff; /* Couleur de fond noire */
+    color: #000000;
+    border: none;
+}
   .button:hover {
     background-color: #333333; /* Couleur de fond noire foncée au survol */
     animation-name: buttonhover-in;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+ .dark-mode .button:hover {
+    background-color: #333333; /* Couleur de fond noire foncée au survol */
+    animation-name: buttonhover-indark;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
@@ -214,9 +242,24 @@ body::-webkit-scrollbar {
         padding: 40px 100px;
     }
   }
-  
+  @keyframes buttonhover-indark {
+    from {
+        background-color: #ffffff;
+        padding: 40px 80px;
+    }
+    to {
+        background-color: #333333;
+        padding: 40px 100px;
+    }
+  }
   .button:not(:hover) {
     animation-name: buttonhover-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .dark-mode .button:not(:hover) {
+    animation-name: buttonhover-outdark;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
   }
@@ -228,6 +271,17 @@ body::-webkit-scrollbar {
     }
     to {
         background-color: #000000;
+        padding: 40px 80px;
+    }
+  }
+
+  @keyframes buttonhover-outdark {
+    from {
+        background-color: #333333;
+        padding: 40px 100px;
+    }
+    to {
+        background-color: #ffffff;
         padding: 40px 80px;
     }
   }

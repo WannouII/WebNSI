@@ -86,9 +86,9 @@ body.dark-mode{
 
 .banner p {
     position: sticky;
-    top: 20%; 
-    left: 45%;
-    transform: translate(-50%, -70%);
+    top: 55%; 
+    left: 55%;
+    transform: translate(-70%, -90%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,21 +407,26 @@ input[type=checkbox] {
     transform: translatex(20px);
   }
 
-  .content .image-container {
+    .image-container {
     position: relative;
     display: inline-block;
     transition: filter 0.3s ease-in-out;
-    width: 100px;
-    height: 100px; 
+    padding: 1cm;
+    cursor: pointer;
+    
+  }
+    .image-container img{
+    width: 10cm;
+    height: 10cm;
+    
   }
 
-  .dark-mode .content .image-container {
+    .dark-mode .image-container img{
     filter: invert(1);
-    width: 100px;
-    height: 100px; 
+    
   }
 
-  .text-box {
+    .text-box {
     position: absolute;
     top: 100%;
     left: 0;
@@ -431,30 +436,15 @@ input[type=checkbox] {
     transition: opacity 0.3s ease-in-out;
   }
 
-  .content .image-container:hover .text-box {
+    .image-container:hover .text-box {
     opacity: 1;
   }
 
-  .content .image-container2 {
-    position: relative;
-    display: inline-block;
-    transition: filter 0.3s ease-in-out;
-    filter: invert(1);
-     
-  }
 
-  .content .image-container2 img{
-    width: 100px;
-    height: 100px; 
-     
-  }
-
-  .dark-mode .content .image-container2 {
-    filter: invert(0);
-    width: 100px;
-    height: 100px; 
-  }
-
- #rotatecolor{
-    transform: rotate(90deg);
- }
+   .content ul li{
+    text-align: justify;
+    flex: 1;
+    margin-right: 7%; 
+    margin-left: 7%;
+    font-size: 30px;
+   }

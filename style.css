@@ -14,6 +14,11 @@ body.dark-mode{
     background-color: #1f1f1f;
 }
 
+@font-face {
+  font-family: raleway;
+  src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
 .dark-mode {
     background-color: #1f1f1f;
     color: #ffffff;

@@ -36,16 +36,16 @@ body.dark-mode{
 }
   
 .block {
-    left: 90px;
+    left: 0.5em;
 }
   
 .chain {
-    right: 175px;
-    top: 150px;
+    right: 1em;
+    top: 1em;
 }
   
 .vide{
-    padding-top: 10000px;
+    padding-top: 1000em;
 }
 
 #blockchain-container {
@@ -70,7 +70,7 @@ body.dark-mode{
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding-top: 3%;
+    padding-top: 4%;
     padding-left: 3%;
     align-items: center;
     
@@ -123,7 +123,7 @@ body::-webkit-scrollbar {
 }
 .content h1{
     
-    font-size: 175px;
+    font-size: 14em;
     
 }
 
@@ -138,7 +138,7 @@ body::-webkit-scrollbar {
 }
 .content h2{
     
-    font-size: 75px;
+    font-size: 5em;
     
     
 }
@@ -149,7 +149,7 @@ body::-webkit-scrollbar {
 
 .content h3{
     
-    font-size: 50px;
+    font-size: 5em;
     
 }
 
@@ -171,14 +171,14 @@ body::-webkit-scrollbar {
     flex: 1; /* Permet au paragraphe de prendre autant d'espace que possible */
     margin-right: 7%; /* Marge à droite pour espacer le paragraphe de l'image */
     margin-left: 7%;
-    font-size: 30px;
+    font-size: 2em;
 }
 .content .column p {
     text-align: justify;
     flex: 1; /* Permet au paragraphe de prendre autant d'espace que possible */
     margin-right: 7%; /* Marge à droite pour espacer le paragraphe de l'image */
     margin-left: 7%;
-    font-size: 30px;
+    font-size: 2em;
     order: 2;
 }
 .content img {
@@ -200,7 +200,7 @@ body::-webkit-scrollbar {
 .navigation p {
     margin: 0 auto;
     max-width: 50%;
-    font-size: 40px;
+    font-size: 4em;
     padding-bottom: 3%;
 }
 
@@ -208,14 +208,14 @@ body::-webkit-scrollbar {
     background-color: #000000; /* Couleur de fond noire */
     color: #ffffff; /* Couleur du texte en blanc */
     border: none; /* Pas de bordure */
-    padding: 40px 80px; /* Espacement intérieur du bouton */
+    padding: 1em 2.5em; /* Espacement intérieur du bouton */
     text-align: center; /* Centrer le texte horizontalement */
     text-decoration: none; /* Supprimer la décoration de lien par défaut */
     display: inline-block; /* Afficher le bouton en tant que bloc inline */
     cursor: pointer; /* Afficher un curseur pointer au survol */
-    font-size: 30px; /* Taille de police du texte */
     font-weight: bold; /* Gras pour le texte */
-    border-radius: 15px; /* Arrondir les coins du bouton */
+    border-radius: 1em; /* Arrondir les coins du bouton */
+    font-size: 2em;
   }
 .dark-mode .button  {
     background-color: #ffffff; /* Couleur de fond noire */
@@ -238,21 +238,21 @@ body::-webkit-scrollbar {
   @keyframes buttonhover-in {
     from {
         background-color: #000000;
-        padding: 40px 80px;
+        padding: 1em 2.5em;
     }
     to {
         background-color: #333333;
-        padding: 40px 100px;
+        padding: 1em 2.5em;
     }
   }
   @keyframes buttonhover-indark {
     from {
         background-color: #ffffff;
-        padding: 40px 80px;
+        padding: 1em 2em;
     }
     to {
         background-color: #333333;
-        padding: 40px 100px;
+        padding: 1em 2.5em;
     }
   }
   .button:not(:hover) {
@@ -272,22 +272,22 @@ body::-webkit-scrollbar {
   @keyframes buttonhover-out {
     from {
         background-color: #333333;
-        padding: 40px 100px;
+        padding: 1em 2.5em;
     }
     to {
         background-color: #000000;
-        padding: 40px 80px;
+        padding: 1em 2em;
     }
   }
 
   @keyframes buttonhover-outdark {
     from {
         background-color: #333333;
-        padding: 40px 100px;
+        padding: 1em 2.5em;
     }
     to {
         background-color: #ffffff;
-        padding: 40px 80px;
+        padding: 1em 2em;
     }
   }
   
@@ -296,8 +296,8 @@ body::-webkit-scrollbar {
     grid-area: l-f;
     display: grid;
     justify-items: center;
-    row-gap: 40px;
-    padding: 15px 0 15px;
+    row-gap: 0.4em;
+    padding: 0.1em 0 0.1em;
     background-color: rgb(27, 27, 27);
     bottom: 0;
     padding-left: 25%;
@@ -307,33 +307,33 @@ body::-webkit-scrollbar {
   }
 .hlogo {
     position: relative;
-   top: -900px;
-   right: -50px;
-   width: 100px;
-   height: 100px;
+   top: -9em;
+   right: -0.5em;
+   width: 1em;
+   height: 0.1em;
    animation-name: fadeIn;
     animation-duration: 2s; 
    animation-delay: 0.5s; 
     animation-fill-mode: forwards; 
 }
 #logo{
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    padding-inline-start: 4em;
 }
   
 #logo .logou{
     display: inline;
     cursor: pointer;
     list-style: none;
-    padding-right: 20px;
+    padding-right: 2em;
 }
   
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 05em;
+    height: 05em;
 }
 
 #navbar {
@@ -358,7 +358,7 @@ body::-webkit-scrollbar {
     color: #ffffff;
     text-decoration: none;
     margin: 0;
-    padding: 14px 16px;
+    padding: 1em 1em;
 }
 
 #navbar a:hover {
@@ -366,8 +366,8 @@ body::-webkit-scrollbar {
 }
 
 #navbar a img {
-    width: 30px;
-    height: 30px;
+    width: 3em;
+    height: 3em;
 }
 
 
@@ -383,33 +383,33 @@ input[type=checkbox] {
   }
   
   .toggle {
-    height: 32px;
-    width: 52px;
-    border-radius: 16px;
+    height: 3.2em;
+    width: 5.2em;
+    border-radius: 16em;
     display: inline-block;
     position: relative;
     margin: 0;
-    border: 2px solid #474755;
+    border: 1px solid #474755;
     background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
     transition: all 0.2s ease;
   }
   .toggle:after {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 24px;
-    height: 24px;
+    top: 0em;
+    left: 0em;
+    width: 2.9em;
+    height: 2.9em;
     border-radius: 50%;
     background: white;
-    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    box-shadow: 0 1em 2em rgba(44, 44, 44, 0.2);
     transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35);
   }
   .toggle:checked {
     border-color: #654FEC;
   }
   .toggle:checked:after {
-    transform: translatex(20px);
+    transform: translatex(2em);
   }
 
     .image-container {
@@ -436,7 +436,7 @@ input[type=checkbox] {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 10px;
+    padding: 1em;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
   }
@@ -451,5 +451,5 @@ input[type=checkbox] {
     flex: 1;
     margin-right: 7%; 
     margin-left: 7%;
-    font-size: 30px;
+    font-size: 2em;
    }

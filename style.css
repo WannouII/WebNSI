@@ -182,8 +182,8 @@ body::-webkit-scrollbar {
     order: 2;
 }
 .content img {
-    width: 40%;
-    height: 40%;
+
+    height: 13cm;
     border-radius: 15%;
     margin-right: 7%; /* Marge à droite pour espacer le paragraphe de l'image */
     margin-left: 7%;

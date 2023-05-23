@@ -4,9 +4,376 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QCM - Blockchain</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <div class="contener">
+        <form id="formulaire" method="POST" action="valider.php">
+            <fieldset class="inscription"><legend>Inscription</legend>
+                <table>
+                    <tr>
+                        <td><label for="nom" >Nom</label></td>
+                        <td><input id="nom" name="nom" type="text" class="required"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prenom" >Prenom</label></td>
+                        <td><input id="prenom" name="prenom" type="text" class="required"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="classe" class="required">Classe</label></td>
+                                                    <td>
+                            <select id="niveau" name="classe" class="required">
+                                <option value="" selected="selected">Choisir votre classe</option>
+                                <option value="MPSI">MPSI</option>
+                            
+                            </select>
+
+                        
+                    </tr>						
+                    <tr>
+                        <td><label for="niveau" class="required">Niveau</label></td>
+                        <td>
+                            <select id="niveau" name="niveau" class="required">
+                                <option value="" selected="selected">Choisir un niveau</option>
+                                <option value="SNT">débile</option>
+                        
+                            </select>
+                        </td>
+                    </tr>				
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Présentation du thème du QCM</legend>
+                <div>Sujet rattrapage : 20 QCMs : "La photographie numérique" </div>
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Question 1</legend>
+                <div class="question">
+                    <p id="question1">Quelle est la première blockchain créée ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q1" value="A">a) Bitcoin</label></li>
+                        <li><label><input type="radio" name="Q1" value="B">b) Ethereum</label></li>
+                        <li><label><input type="radio" name="Q1" value="C">c) Ripple</label></li>				
+                        <li><label><input type="radio" name="Q1" value="D">d) Litecoin</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 2</legend>
+                <div class="question">		
+                    <p id="question2">Quel est le rôle des mineurs dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q2" value="A">a) Vérifier les transactions et les ajouter aux blocs</label></li>
+                        <li><label><input type="radio" name="Q2" value="B">b) Créer de nouvelles unités de cryptomonnaie</label></li>
+                        <li><label><input type="radio" name="Q2" value="C">c) Gérer les nœuds du réseau</label></li>				
+                        <li><label><input type="radio" name="Q2" value="D">d) Établir des contrats intelligents</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 3</legend>
+                <div class="question">
+                    <p id="question3">Quelle est la cryptomonnaie la plus utilisée pour les contrats intelligents ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q3" value="A">a) Bitcoin</label></li>
+                        <li><label><input type="radio" name="Q3" value="B">b) Ethereum</label></li>
+                        <li><label><input type="radio" name="Q3" value="C">c) Ripple</label></li>				
+                        <li><label><input type="radio" name="Q3" value="D">d) Litecoin</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 4</legend>
+                <div class="question">
+                    <p id="question4">Qu'est-ce qu'un contrat intelligent (smart contract) ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q4" value="A">a) Un accord juridique en ligne</label></li>
+                        <li><label><input type="radio" name="Q4" value="B">b) Un programme informatique auto-exécutable</label></li>
+                        <li><label><input type="radio" name="Q4" value="C">c) Un algorithme de chiffrement avancé</label></li>				
+                        <li><label><input type="radio" name="Q4" value="D">d) Un contrat entre mineurs de blockchain</label></li>
+                    </ul>
+                </div>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Question 5</legend>
+                <div class="question">
+                    <p id="question5">Quelle est la différence entre une blockchain publique et une blockchain privée ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q5" value="A">a) La blockchain publique est ouverte à tous, tandis que la blockchain privée est réservée à une organisation spécifique.</label></li>
+                        <li><label><input type="radio" name="Q5" value="B">b) La blockchain publique utilise un consensus par preuve d'enjeu, tandis que la blockchain privée utilise un consensus par preuve de travail.</label></li>
+                        <li><label><input type="radio" name="Q5" value="C">c) La blockchain publique permet des transactions plus rapides que la blockchain privée.</label></li>
+                        <li><label><input type="radio" name="Q5" value="D">d) La blockchain publique utilise un algorithme de chiffrement asymétrique, tandis que la blockchain privée utilise un algorithme de chiffrement symétrique.</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 6</legend>
+                <div class="question">
+                    <p id="question6">Qu'est-ce qu'une adresse de portefeuille (wallet address) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q6" value="A">a) L'identifiant d'une transaction</label></li>
+                        <li><label><input type="radio" name="Q6" value="B">b) Une clé privée permettant d'accéder à des fonds cryptographiques</label></li>
+                        <li><label><input type="radio" name="Q6" value="C">c) L'emplacement physique d'un mineur de blockchain</label></li>
+                        <li><label><input type="radio" name="Q6" value="D">d) L'adresse IP d'un nœud du réseau</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 7</legend>
+                <div class="question">
+                    <p id="question7">Qu'est-ce que le hachage (hash) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q7" value="A">a) Un algorithme de chiffrement asymétrique</label></li>
+                        <li><label><input type="radio" name="Q7" value="B">b) Un type de consensus utilisé dans la blockchain</label></li>
+                        <li><label><input type="radio" name="Q7" value="C">c) Une clé publique permettant de vérifier une signature numérique</label></li>
+                        <li><label><input type="radio" name="Q7" value="D">d) Une valeur unique générée à partir des données d'un bloc</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 8</legend>
+                <div class="question">
+                    <p id="question8">Quelle est la principale caractéristique de la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q8" value="A">a) La décentralisation</label></li>
+                        <li><label><input type="radio" name="Q8" value="B">b) La confidentialité</label></li>
+                        <li><label><input type="radio" name="Q8" value="C">c) La vitesse de transaction</label></li>
+                        <li><label><input type="radio" name="Q8" value="D">d) La facilité d'utilisation</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 9</legend>
+                <div class="question">
+                    <p id="question9">Qu'est-ce qu'une attaque des 51% dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q9" value="A">a) Une attaque visant à voler des fonds cryptographiques</label></li>
+                        <li><label><input type="radio" name="Q9" value="B">b) Une attaque visant à bloquer les transactions dans la blockchain</label></li>
+                        <li><label><input type="radio" name="Q9" value="C">c) Une attaque visant à compromettre la confidentialité des utilisateurs</label></li>
+                        <li><label><input type="radio" name="Q9" value="D">d) Une attaque visant à prendre le contrôle de plus de 50% de la puissance de calcul du réseau</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 10</legend>
+                <div class="question">
+                    <p id="question10">Qu'est-ce que la tokenisation dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q10" value="A">a) Le processus de conversion de devises traditionnelles en cryptomonnaies</label></li>
+                        <li><label><input type="radio" name="Q10" value="B">b) Le processus de création de nouvelles unités de cryptomonnaie</label></li>
+                        <li><label><input type="radio" name="Q10" value="C">c) Le processus de représentation d'actifs réels sous forme de tokens numériques</label></li>
+                        <li><label><input type="radio" name="Q10" value="D">d) Le processus de signature numérique d'une transaction dans la blockchain</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 11</legend>
+                <div class="question">
+                    <p id="question11">Qu'est-ce qu'un consensus dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q11" value="A">a) Un algorithme de chiffrement utilisé pour sécuriser les transactions</label></li>
+                        <li><label><input type="radio" name="Q11" value="B">b) Un processus permettant aux mineurs de résoudre des équations mathématiques complexes</label></li>
+                        <li><label><input type="radio" name="Q11" value="C">c) Un accord entre les participants de la blockchain pour valider les transactions</label></li>
+                        <li><label><input type="radio" name="Q11" value="D">d) Une méthode utilisée pour stocker les données de manière sécurisée</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 12</legend>
+                <div class="question">
+                    <p id="question12">Qu'est-ce qu'une fourche (fork) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q12" value="A">a) Une opération permettant d'ajouter de nouvelles fonctionnalités à la blockchain</label></li>
+                        <li><label><input type="radio" name="Q12" value="B">b) Une opération permettant de diviser la blockchain en deux versions distinctes</label></li>
+                        <li><label><input type="radio" name="Q12" value="C">c) Une opération permettant de réduire la complexité de la blockchain</label></li>
+                        <li><label><input type="radio" name="Q12" value="D">d) Une opération permettant de fusionner plusieurs blockchains en une seule</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 13</legend>
+                <div class="question">
+                    <p id="question13">Qu'est-ce que la preuve de travail (proof of work) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q13" value="A">a) Un système de consensus basé sur la participation des mineurs</label></li>
+                        <li><label><input type="radio" name="Q13" value="B">b) Un système de chiffrement utilisé pour sécuriser les transactions</label></li>
+                        <li><label><input type="radio" name="Q13" value="C">c) Un processus permettant de vérifier l'authenticité des transactions</label></li>
+                        <li><label><input type="radio" name="Q13" value="D">d) Un processus permettant aux mineurs de résoudre des problèmes mathématiques complexes</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+ 
+            <fieldset>
+                <legend>Question 14</legend>
+                <div class="question">
+                    <p id="question14">Qu'est-ce que la tokenisation dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q14" value="A">a) La conversion d'actifs physiques en actifs numériques représentés par des tokens</label></li>
+                        <li><label><input type="radio" name="Q14" value="B">b) Un système de consensus utilisé dans les blockchains privées</label></li>
+                        <li><label><input type="radio" name="Q14" value="C">c) Un processus permettant de vérifier l'identité des utilisateurs de la blockchain</label></li>
+                        <li><label><input type="radio" name="Q14" value="D">d) Une méthode de chiffrement asymétrique utilisée pour sécuriser les transactions</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 15</legend>
+                <div class="question">
+                    <p id="question15">Qu'est-ce que la blockchain permissionless (ou publique) ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q15" value="A">a) Une blockchain accessible à tous sans restriction</label></li>
+                        <li><label><input type="radio" name="Q15" value="B">b) Une blockchain réservée aux mineurs autorisés</label></li>
+                        <li><label><input type="radio" name="Q15" value="C">c) Une blockchain utilisant un algorithme de consensus basé sur la preuve d'enjeu</label></li>
+                        <li><label><input type="radio" name="Q15" value="D">d) Une blockchain utilisant un algorithme de chiffrement asymétrique</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 16</legend>
+                <div class="question">
+                    <p id="question16">Qu'est-ce que la blockchain permissioned (ou privée) ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q16" value="A">a) Une blockchain réservée à une organisation spécifique avec des restrictions d'accès</label></li>
+                        <li><label><input type="radio" name="Q16" value="B">b) Une blockchain accessible à tous sans restriction</label></li>
+                        <li><label><input type="radio" name="Q16" value="C">c) Une blockchain utilisant un algorithme de consensus basé sur la preuve de travail</label></li>
+                        <li><label><input type="radio" name="Q16" value="D">d) Une blockchain utilisant un algorithme de chiffrement symétrique</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Question 17</legend>
+                <div class="question">
+                    <p id="question17">Qu'est-ce que la preuve de travail (proof of work) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q17" value="A">a) Un système de consensus qui nécessite la résolution de problèmes mathématiques complexes</label></li>
+                        <li><label><input type="radio" name="Q17" value="B">b) Un mécanisme permettant de vérifier l'identité des utilisateurs de la blockchain</label></li>
+                        <li><label><input type="radio" name="Q17" value="C">c) Un processus permettant de convertir des actifs physiques en actifs numériques</label></li>
+                        <li><label><input type="radio" name="Q17" value="D">d) Une méthode de chiffrement asymétrique utilisée pour sécuriser les transactions</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 18</legend>
+                <div class="question">
+                    <p id="question18">Qu'est-ce que la preuve d'enjeu (proof of stake) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q18" value="A">a) Un système de consensus basé sur la détention de cryptomonnaie</label></li>
+                        <li><label><input type="radio" name="Q18" value="B">b) Un mécanisme permettant de vérifier l'identité des utilisateurs de la blockchain</label></li>
+                        <li><label><input type="radio" name="Q18" value="C">c) Un processus permettant de convertir des actifs physiques en actifs numériques</label></li>
+                        <li><label><input type="radio" name="Q18" value="D">d) Une méthode de chiffrement asymétrique utilisée pour sécuriser les transactions</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 19</legend>
+                <div class="question">
+                    <p id="question19">Qu'est-ce qu'une attaque des 51% (51% attack) dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q19" value="A">a) Une situation où un acteur malveillant contrôle la majorité du pouvoir de calcul d'une blockchain</label></li>
+                        <li><label><input type="radio" name="Q19" value="B">b) Un mécanisme permettant de vérifier l'identité des utilisateurs de la blockchain</label></li>
+                        <li><label><input type="radio" name="Q19" value="C">c) Un processus permettant de convertir des actifs physiques en actifs numériques</label></li>
+                        <li><label><input type="radio" name="Q19" value="D">d) Une méthode de chiffrement asymétrique utilisée pour sécuriser les transactions</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Question 20</legend>
+                <div class="question">
+                    <p id="question20">Qu'est-ce qu'une adresse publique dans la blockchain ?</p>
+                    <ul>
+                        <li><label><input type="radio" name="Q20" value="A">a) Une chaîne de caractères alphanumériques utilisée pour recevoir des fonds dans la blockchain</label></li>
+                        <li><label><input type="radio" name="Q20" value="B">b) Une clé privée permettant d'accéder à des fonds cryptographiques</label></li>
+                        <li><label><input type="radio" name="Q20" value="C">c) L'emplacement physique d'un mineur de blockchain</label></li>
+                        <li><label><input type="radio" name="Q20" value="D">d) L'adresse IP d'un nœud du réseau</label></li>
+                    </ul>
+                </div>
+            </fieldset>
+            
+
+            <p class="right">
+                <button type="button" onclick="valider()">Valider</button>
+            </p>
+        </form>			
+    </div>
+    <!--
+1) Quelle est la première blockchain créée ?
+   Réponse : a) Bitcoin
+
+2) Quel est le rôle des mineurs dans la blockchain ?
+   Réponse : a) Vérifier les transactions et les ajouter aux blocs
+
+3) Quelle est la cryptomonnaie la plus utilisée pour les contrats intelligents ?
+   Réponse : b) Ethereum
+
+4) Qu'est-ce qu'un contrat intelligent (smart contract) ?
+   Réponse : b) Un programme informatique auto-exécutable
+
+5) Quelle est la différence entre une blockchain publique et une blockchain privée ?
+   Réponse : a) La blockchain publique est ouverte à tous, tandis que la blockchain privée est réservée à une organisation spécifique.
+
+6) Qu'est-ce qu'une adresse de portefeuille (wallet address) dans la blockchain ?
+   Réponse : b) Une clé privée permettant d'accéder à des fonds cryptographiques
+
+7) Quel est le mécanisme de consensus utilisé par Bitcoin ?
+   Réponse : c) Preuve de travail (Proof of Work)
+
+8) Quel est le langage de programmation utilisé pour développer des contrats intelligents sur Ethereum ?
+   Réponse : a) Solidity
+
+9) Qu'est-ce qu'une ICO (Initial Coin Offering) ?
+   Réponse : c) Une méthode de financement participatif utilisée par les projets de blockchain pour lever des fonds en échange de leurs propres cryptomonnaies.
+
+10) Quel est le nombre total de Bitcoins pouvant être créés ?
+    Réponse : d) 21 millions
+
+11) Quelle est la blockchain qui utilise le mécanisme de consensus par preuve d'enjeu (Proof of Stake) ?
+    Réponse : b) Cardano
+
+12) Qu'est-ce qu'une adresse publique dans la blockchain ?
+    Réponse : a) Une chaîne de caractères unique utilisée pour recevoir des fonds cryptographiques.
+
+13) Qu'est-ce qu'une attaque de 51% dans la blockchain ?
+    Réponse : b) Lorsqu'un individu ou un groupe contrôle plus de 50% de la puissance de calcul d'un réseau blockchain, ce qui leur permet de prendre le contrôle des opérations et de potentiellement effectuer des transactions frauduleuses.
+
+14) Quel est l'avantage principal de l'utilisation d'une blockchain ?
+    Réponse : b) La transparence et l'immutabilité des données.
+
+15) Quel est le rôle d'un nœud complet dans la blockchain ?
+    Réponse : a) Stocker une copie complète de la blockchain et participer à la validation des transactions.
+
+16) Qu'est-ce qu'une chaîne latérale (sidechain) dans la blockchain ?
+    Réponse : c) Une blockchain indépendante qui est connectée à une blockchain principale et qui permet d'effectuer des transactions spécifiques sans congestionner la blockchain principale.
+
+17) Qu'est-ce qu'un hash dans la blockchain ?
+    Réponse : d) Une empreinte numérique unique générée à partir de données brutes à l'aide d'une fonction de hachage cryptographique.
+
+18) Quelle est la principale caractéristique de la blockchain qui assure la sécurité des données ?
+    Réponse : c) La décentralisation
+
+19) Qu'est-ce qu'un contrat intelligent (smart contract) dans la blockchain ?
+    Réponse : b) Un protocole informatique auto-exécutable qui facilite, vérifie ou met en œuvre la négociation ou l'exécution d'un contrat.
+
+20) Quelle est la blockchain qui utilise le langage de programmation Golang pour ses contrats intelligents ?
+    Réponse : a) Hyperledger Fabric
+-->
+
 </body>
 </html>

@@ -1,0 +1,149 @@
+body{
+    margin: 0; 
+}
+
+.navbar {
+    background-color: #7a9183;
+    color: #ffffff;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 999;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.navbar a img {
+    padding-top: 0.5em;
+    height:6em;
+}
+
+.navbar a {
+    font-size: 2em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.navbar table{
+    margin: 0 -3em;
+    width: 100%;
+}
+
+.content {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    color: #ffffff;
+    background: linear-gradient(180deg, #7a9183 0%, #DBE4C6 80%, #DBE4C6 100%);
+}
+.title span {
+    color: #66796d;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: -2px -2px #8fa899,
+    2px 2px #333;
+    color:#98b9a4;
+    
+}
+
+.legende {
+    text-align: center;
+    color: #535353;
+    font-style: italic;
+}
+.article{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #333;
+    font-size: 2em;
+    text-align: justify;
+}
+
+.citation {
+    border: solid 1px #66796d;
+    color: #000;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: linear-gradient(180deg,#9fa58f 0%, #DBE4C6 100%);
+}
+
+.image-container {
+    text-align: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: 20%;
+    width: 20%;
+    transition: height 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    height: 40%;
+    width: 40%;
+}
+
+.image-container p {
+    margin-left: 10%;
+    text-align: justify;
+}
+
+.liste{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.liste li{
+    margin-bottom: 2%;
+}
+
+.footer{
+    grid-area: l-f;
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+    padding: 15px 0 15px;
+    background-color: #94AF9F;
+    bottom: 0;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 0;
+    
+}
+  
+#logo{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+  
+#logo .logou{
+    display: inline;
+    cursor: pointer;
+    list-style: none;
+    padding-right: 20px;
+}
+  
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+#smp{
+    font-size: 75%;
+}
